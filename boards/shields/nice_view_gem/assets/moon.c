@@ -5,11 +5,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_NVIEW-MOON
-#define LV_ATTRIBUTE_IMG_NVIEW-MOON
+#ifndef LV_ATTRIBUTE_IMG_NVIEW_MOON
+#define LV_ATTRIBUTE_IMG_NVIEW_MOON
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_NVIEW-MOON uint8_t nview-moon_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_NVIEW_MOON uint8_t nview_moon_map[] = {
 
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0x00, 0x00, 0x00, 0xff, /*Color of index 0*/
@@ -89,13 +89,13 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_NVIEW-MOO
   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf0, 
 };
 
-const lv_img_dsc_t nview-moon = {
+const lv_img_dsc_t nview_moon = {
   .header.cf = LV_IMG_CF_ALPHA_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 140,
   .header.h = 68,
   .data_size = 1224,
-  .data = nview-moon_map,
+  .data = nview_moon_map,
 };
 
