@@ -19,6 +19,8 @@ LV_IMG_DECLARE(crystal_14);
 LV_IMG_DECLARE(crystal_15);
 LV_IMG_DECLARE(crystal_16);
 
+LV_IMG_DECLARE(moon);
+
 const lv_img_dsc_t *anim_imgs[] = {
     &crystal_01, &crystal_02, &crystal_03, &crystal_04, &crystal_05, &crystal_06,
     &crystal_07, &crystal_08, &crystal_09, &crystal_10, &crystal_11, &crystal_12,
@@ -41,7 +43,7 @@ void draw_animation(lv_obj_t *canvas) {
     srand(k_uptime_get_32());
     int random_index = rand() % length;
 
-    lv_img_set_src(art, anim_imgs[random_index]);
+    lv_img_set_src(art, moon);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
