@@ -36,15 +36,16 @@ void draw_animation(lv_obj_t *canvas) {
     lv_animimg_set_duration(art, CONFIG_NICE_VIEW_GEM_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
     lv_animimg_start(art);
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
 #else
     lv_obj_t *art = lv_img_create(canvas);
 
-    int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
-    srand(k_uptime_get_32());
-    int random_index = rand() % length;
+    /* int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]); */
+    /* srand(k_uptime_get_32()); */
+    /* int random_index = rand() % length; */
 
     lv_img_set_src(art, &nview_moon);
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 #endif
 
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
 }
